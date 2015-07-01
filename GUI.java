@@ -3,14 +3,12 @@ package passwordgenerator;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 
 @SuppressWarnings("serial")
-public class GUI extends JPanel implements ActionListener {
+public class GUI extends JPanel  {
 
     private static final String UPPERCASE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String LOWERCASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
@@ -240,8 +238,4 @@ public class GUI extends JPanel implements ActionListener {
     // End of variables declaration                   
 
 
-    @Override
-    public void actionPerformed(ActionEvent ae) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
 }
