@@ -14,13 +14,9 @@ public class PasswordGenerator {
     }
 
     // constructor
-    public PasswordGenerator(String characters) {
-        this.charactersToBeUsed = characters;
-    }
-
-    public String generate() {
-        return generate(DEFAULT_PASSWORD_LENGTH);
-    }
+    PasswordGenerator(String characters) { this.charactersToBeUsed = characters; }
+    
+    public String generate() { return generate(DEFAULT_PASSWORD_LENGTH); }
 
     public String generate(int length) {
         char[] password = new char[length];

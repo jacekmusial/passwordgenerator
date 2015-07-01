@@ -185,15 +185,9 @@ public class GUI extends JPanel  {
 
         charactersToBeUsed = UPPERCASE_CHARACTERS; // always
 
-        if (useLowerAlphabet.isSelected()) {
-            charactersToBeUsed += LOWERCASE_CHARACTERS;
-        }
-        if (useAlphanumeric.isSelected()) {
-            charactersToBeUsed += NUMERIC_CHARACTERS;
-        }
-        if (useSpecialChars.isSelected()) {
-            charactersToBeUsed += SPECIAL_CHARACTERS;
-        }
+        if (useLowerAlphabet.isSelected()) { charactersToBeUsed += LOWERCASE_CHARACTERS; }
+        if (useAlphanumeric.isSelected()) {  charactersToBeUsed += NUMERIC_CHARACTERS; }
+        if (useSpecialChars.isSelected()) { charactersToBeUsed += SPECIAL_CHARACTERS; }
         PasswordGenerator pg = new PasswordGenerator(charactersToBeUsed);
         int numberOfChars = Integer.parseInt(numberOfCharacters.getText());
 
