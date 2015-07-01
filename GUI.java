@@ -206,6 +206,7 @@ public class GUI extends JPanel  {
 
     private void copyToClipboard(java.awt.event.ActionEvent evt) {                                 
         String myString = passwordField.getText();
+        if( myString.isEmpty()) { return; }
         StringSelection stringSelection = new StringSelection (myString);
         Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard ();
         clpbrd.setContents (stringSelection, null);

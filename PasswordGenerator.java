@@ -9,7 +9,7 @@ public class PasswordGenerator {
     private static final int DEFAULT_PASSWORD_LENGTH = 8;
 
     // default constructor
-    public PasswordGenerator() { 
+    PasswordGenerator() { 
         this(UPPERCASE_CHARACTERS);
     }
 
